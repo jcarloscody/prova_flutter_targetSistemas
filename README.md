@@ -4,6 +4,8 @@
 
 Este repositório tem como finalidade demonstrar a resolução do teste do processo seletivo da [Target Sistemas](https://github.com/jcarloscody/prova_flutter_targetSistemas/blob/master/prova/prova_flutter-%20TargetSistemas.pdf).
 
+> Você poderá acompanhar os passos a passos no projeto deste repositório.
+
 ## DEPENDÊNCIAS
 -   mobx: ^2.2.1
 -   flutter_mobx:
