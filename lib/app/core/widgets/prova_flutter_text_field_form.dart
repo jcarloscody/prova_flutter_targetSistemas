@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:prova_flutter/app/core/iu/prova_flutter_theme.dart';
+import 'package:flutter/services.dart';
 
-class ProvaFlutterTextField extends StatelessWidget {
+class ProvaFlutterTextFieldForm extends StatelessWidget {
   final bool obscureText;
   final Icon? prefixIcon;
   final TextEditingController? textEditingController;
   final FormFieldValidator<String>? formFieldValidator;
   final FocusNode? focusNode;
   final EdgeInsetsGeometry? padding;
-  final String _label;
 
-  const ProvaFlutterTextField({
+  const ProvaFlutterTextFieldForm({
     super.key,
     required this.obscureText,
     this.prefixIcon,
@@ -18,26 +17,21 @@ class ProvaFlutterTextField extends StatelessWidget {
     this.textEditingController,
     this.focusNode,
     this.padding,
-    required String label,
-  })  : assert(obscureText == true ? prefixIcon == null : true,
-            "O obscureText não pode ser true juntamente com o prefixIcon"),
-        _label = label;
+  }) : assert(obscureText == true ? prefixIcon == null : true,
+            "O obscureText não pode ser true juntamente com o prefixIcon");
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: padding ?? const EdgeInsets.all(0.0),
-      child: TextField(
+      child: TextFormField(
+        inputFormatters: [
+          LengthLimitingTextInputFormatter(20),
+        ],
         controller: textEditingController,
         focusNode: focusNode,
+        validator: formFieldValidator,
         decoration: InputDecoration(
-          label: Align(
-            alignment: Alignment.center,
-            child: Text(
-              _label,
-              style: ProvaFlutterTheme.styleTextItemBoxWidget,
-            ),
-          ),
           fillColor: Colors.white,
           filled: true,
           border: const OutlineInputBorder(

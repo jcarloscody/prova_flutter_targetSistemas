@@ -21,4 +21,10 @@ class ProvaFlutterTheme {
     color: Colors.white,
     fontSize: 16,
   );
+
+  static final styleTextItemBoxWidget = GoogleFonts.roboto(
+    color: Colors.black,
+    fontSize: 17,
+    fontWeight: FontWeight.bold,
+  );
 }
