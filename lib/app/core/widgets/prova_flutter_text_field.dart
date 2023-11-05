@@ -8,18 +8,20 @@ class ProvaFlutterTextField extends StatelessWidget {
   final FormFieldValidator<String>? formFieldValidator;
   final FocusNode? focusNode;
   final EdgeInsetsGeometry? padding;
+  final VoidCallback? onCompleted;
   final String _label;
 
-  const ProvaFlutterTextField({
-    super.key,
-    required this.obscureText,
-    this.prefixIcon,
-    this.formFieldValidator,
-    this.textEditingController,
-    this.focusNode,
-    this.padding,
-    required String label,
-  })  : assert(obscureText == true ? prefixIcon == null : true,
+  const ProvaFlutterTextField(
+      {super.key,
+      required this.obscureText,
+      this.prefixIcon,
+      this.formFieldValidator,
+      this.textEditingController,
+      this.focusNode,
+      this.padding,
+      required String label,
+      this.onCompleted})
+      : assert(obscureText == true ? prefixIcon == null : true,
             "O obscureText não pode ser true juntamente com o prefixIcon"),
         _label = label;
 
@@ -28,6 +30,7 @@ class ProvaFlutterTextField extends StatelessWidget {
     return Padding(
       padding: padding ?? const EdgeInsets.all(0.0),
       child: TextField(
+        onEditingComplete: onCompleted,
         controller: textEditingController,
         focusNode: focusNode,
         decoration: InputDecoration(

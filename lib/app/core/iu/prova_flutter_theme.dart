@@ -27,4 +27,11 @@ class ProvaFlutterTheme {
     fontSize: 17,
     fontWeight: FontWeight.bold,
   );
+
+  static final buttonStyle = ElevatedButton.styleFrom(
+    backgroundColor: Colors.green.shade600,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(30),
+    ),
+  );
 }
