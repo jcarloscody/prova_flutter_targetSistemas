@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:prova_flutter/app/core/iu/prova_flutter_theme.dart';
-import 'package:prova_flutter/app/core/widgets/prova_flutter_text_field.dart';
+import 'package:prova_flutter/app/core/navigator/prova_flutter_navigator.dart';
+import 'package:prova_flutter/app/core/widgets/prova_flutter_text_field_form.dart';
 import 'package:validatorless/validatorless.dart';
 
 class AuthPage extends StatefulWidget {
@@ -55,7 +56,7 @@ class _AuthPageState extends State<AuthPage> {
                     textAlign: TextAlign.start,
                   ),
                 ),
-                ProvaFlutterTextField(
+                ProvaFlutterTextFieldForm(
                   obscureText: false,
                   prefixIcon: const Icon(
                     Icons.person,
@@ -85,7 +86,7 @@ class _AuthPageState extends State<AuthPage> {
                     textAlign: TextAlign.start,
                   ),
                 ),
-                ProvaFlutterTextField(
+                ProvaFlutterTextFieldForm(
                   obscureText: false,
                   prefixIcon: const Icon(
                     Icons.lock_sharp,
@@ -113,7 +114,9 @@ class _AuthPageState extends State<AuthPage> {
                       borderRadius: BorderRadius.circular(30),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    ProvaFlutterNavigator.to.pushNamed("/home");
+                  },
                   child: Text(
                     "Entrar",
                     style: ProvaFlutterTheme.styleText,
