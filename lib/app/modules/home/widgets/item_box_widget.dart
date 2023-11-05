@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prova_flutter/app/core/iu/prova_flutter_target_sistemas_icons.dart';
 import 'package:prova_flutter/app/core/iu/prova_flutter_theme.dart';
 
 class ItemBoxWidget extends StatelessWidget {
@@ -46,7 +47,8 @@ class ItemBoxWidget extends StatelessWidget {
                 iconSize: 40,
                 padding: const EdgeInsets.all(0),
                 icon: const Icon(
-                  Icons.note_add,
+                  ProvaFlutterTargetSistemas.pencil_alt,
+                  size: 34,
                 ),
               ),
             ),
