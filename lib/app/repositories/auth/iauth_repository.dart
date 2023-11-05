@@ -6,7 +6,6 @@ import 'package:http/http.dart' as http;
 class IauthRepository extends AuthRepository {
   Future<UserModel?> auth(
       {required String usuario, required String senha}) async {
-    debugPrint(">>>>>>>> $usuario");
     // var result =
     //     await http.get(Uri.parse("http://localhost:8080/users?name=$usuario"));
 

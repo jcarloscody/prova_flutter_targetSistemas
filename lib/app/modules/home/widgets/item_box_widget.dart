@@ -3,7 +3,16 @@ import 'package:prova_flutter/app/core/iu/prova_flutter_theme.dart';
 
 class ItemBoxWidget extends StatelessWidget {
   final String _texto;
-  const ItemBoxWidget({super.key, required String texto}) : _texto = texto;
+  final VoidCallback _editar;
+  final VoidCallback _apagar;
+  const ItemBoxWidget({
+    super.key,
+    required String texto,
+    required VoidCallback editar,
+    required VoidCallback apagar,
+  })  : _texto = texto,
+        _editar = editar,
+        _apagar = apagar;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +42,7 @@ class ItemBoxWidget extends StatelessWidget {
             ),
             IntrinsicWidth(
               child: IconButton(
-                onPressed: () {},
+                onPressed: _editar,
                 iconSize: 40,
                 padding: const EdgeInsets.all(0),
                 icon: const Icon(
@@ -43,7 +52,7 @@ class ItemBoxWidget extends StatelessWidget {
             ),
             IntrinsicWidth(
               child: IconButton(
-                onPressed: () {},
+                onPressed: _apagar,
                 iconSize: 40,
                 padding: const EdgeInsets.all(0),
                 icon: const Icon(

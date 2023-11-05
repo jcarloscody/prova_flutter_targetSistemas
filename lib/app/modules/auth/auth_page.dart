@@ -120,16 +120,14 @@ class _AuthPageState extends State<AuthPage> {
                   height: height * 0.05,
                 ),
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green.shade600,
-                    padding: EdgeInsets.only(
-                      left: width * 0.15,
-                      right: width * 0.15,
-                      top: height * 0.02,
-                      bottom: height * 0.02,
-                    ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
+                  style: ProvaFlutterTheme.buttonStyle.copyWith(
+                    padding: MaterialStatePropertyAll(
+                      EdgeInsets.only(
+                        left: width * 0.15,
+                        right: width * 0.15,
+                        top: height * 0.02,
+                        bottom: height * 0.02,
+                      ),
                     ),
                   ),
                   onPressed: () async {
