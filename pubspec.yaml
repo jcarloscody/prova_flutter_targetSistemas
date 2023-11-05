@@ -42,6 +42,8 @@ dependencies:
   shared_preferences:
   google_fonts:
   validatorless:
+  url_launcher: ^6.2.1
+  http:
 
 dev_dependencies:
   flutter_test:
