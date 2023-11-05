@@ -8,6 +8,7 @@ class ProvaFlutterTextFieldForm extends StatelessWidget {
   final FormFieldValidator<String>? formFieldValidator;
   final FocusNode? focusNode;
   final EdgeInsetsGeometry? padding;
+  final int limiteCaracteres;
 
   const ProvaFlutterTextFieldForm({
     super.key,
@@ -17,8 +18,8 @@ class ProvaFlutterTextFieldForm extends StatelessWidget {
     this.textEditingController,
     this.focusNode,
     this.padding,
-  }) : assert(obscureText == true ? prefixIcon == null : true,
-            "O obscureText não pode ser true juntamente com o prefixIcon");
+    required this.limiteCaracteres,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,8 +27,11 @@ class ProvaFlutterTextFieldForm extends StatelessWidget {
       padding: padding ?? const EdgeInsets.all(0.0),
       child: TextFormField(
         inputFormatters: [
-          LengthLimitingTextInputFormatter(20),
+          LengthLimitingTextInputFormatter(limiteCaracteres),
         ],
+        onChanged: (value) {
+          textEditingController?.text = value.trim();
+        },
         controller: textEditingController,
         focusNode: focusNode,
         validator: formFieldValidator,
