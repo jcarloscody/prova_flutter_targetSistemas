@@ -27,7 +27,9 @@ Para criar o mock da api, usei o pacote **[json_rest_server](https://pub.dev/pac
 
 
 ## TELAS
+[GIF - Clique aqui](https://github.com/jcarloscody/prova_flutter_targetSistemas/blob/master/prova/movie.gif)
 
+<br/>
 <div style="display: flex;">
 <img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-202131.png?token=GHSAT0AAAAAACJ3XSSEXGNNDLUT4TDJ6XCWZKIF5ZA" width="200" height="300" >
 ..
