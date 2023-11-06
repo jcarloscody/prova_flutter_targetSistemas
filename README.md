@@ -6,6 +6,8 @@ Este repositório tem como finalidade demonstrar a resolução do teste do proce
 
 > Você poderá acompanhar a evolução do teste no projeto criado.  [Prova Flutter - Target Sistemas](https://github.com/users/jcarloscody/projects/3/views/1)
 
+> Você pode baixar o **[apk aqui!](https://github.com/jcarloscody/prova_flutter_targetSistemas/raw/master/prova/app.apk)**
+
 ## DEPENDÊNCIAS
 -   mobx: ^2.2.1
 -   flutter_mobx:
