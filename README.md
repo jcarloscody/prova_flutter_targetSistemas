@@ -4,7 +4,9 @@
 
 Este repositório tem como finalidade demonstrar a resolução do teste do processo seletivo da [Target Sistemas](https://github.com/jcarloscody/prova_flutter_targetSistemas/blob/master/prova/prova_flutter-%20TargetSistemas.pdf).
 
-> Você poderá acompanhar os passos a passos no projeto deste repositório.
+> Você poderá acompanhar a evolução do teste no projeto criado.  [Prova Flutter - Target Sistemas](https://github.com/users/jcarloscody/projects/3/views/1)
+
+> Você pode baixar o **[apk aqui!](https://github.com/jcarloscody/prova_flutter_targetSistemas/raw/master/prova/app.apk)**
 
 ## DEPENDÊNCIAS
 -   mobx: ^2.2.1
@@ -27,6 +29,23 @@ Para criar o mock da api, usei o pacote **[json_rest_server](https://pub.dev/pac
 
 
 ## TELAS
+[GIF - Clique aqui](https://github.com/jcarloscody/prova_flutter_targetSistemas/blob/master/prova/movie.gif)
 
+<br/>
+<div style="display: flex;">
+<img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-202131.png?token=GHSAT0AAAAAACJ3XSSEXGNNDLUT4TDJ6XCWZKIF5ZA" width="200" height="300" >
+..
+<img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-202230.png?token=GHSAT0AAAAAACJ3XSSE7RSNZHNRTJ6CBIZGZKIF2NA" width="200" height="300" >
+..
+<img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-202253.png?token=GHSAT0AAAAAACJ3XSSFAQ7GI4ABYINCMGK6ZKIF26A" width="200" height="300" >
+</div>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+<br/>
+<div style="display: flex;">
+<img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-204611.png?token=GHSAT0AAAAAACJ3XSSEMO3QMY4E4M6XZLYIZKIF4BQ" width="200" height="300" >
+..
+<img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-204514.png?token=GHSAT0AAAAAACJ3XSSFMLHIDIKQ4E6XQGVYZKIF3TQ" width="200" height="300" >
+..
+<img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-212501.png" width="200" height="300" >
+</div>
+
