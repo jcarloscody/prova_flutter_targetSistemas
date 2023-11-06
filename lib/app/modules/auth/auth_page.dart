@@ -142,7 +142,10 @@ class _AuthPageState extends State<AuthPage> {
                                 usuario: _usuarioEC.text,
                                 senha: _senhaEC.text) !=
                             null) {
-                          ProvaFlutterNavigator.to.pushNamed("/home");
+                          ProvaFlutterNavigator.to.pushNamedAndRemoveUntil(
+                            "/home",
+                            (route) => false,
+                          );
                         }
                       }
                     }
