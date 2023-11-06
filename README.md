@@ -28,5 +28,19 @@ Para criar o mock da api, usei o pacote **[json_rest_server](https://pub.dev/pac
 
 ## TELAS
 
+<div style="display: flex;">
+<img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-202131.png?token=GHSAT0AAAAAACJ3XSSFJPLTYXQVA76FHQ2IZKIFQ5Q" width="200" height="300"  style="display: inline;">
+..
+<img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-202230.png?token=GHSAT0AAAAAACJ3XSSE7RSNZHNRTJ6CBIZGZKIF2NA" width="200" height="300"  style="display: inline;">
+..
+<img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-202253.png?token=GHSAT0AAAAAACJ3XSSFAQ7GI4ABYINCMGK6ZKIF26A" width="200" height="300"  style="display: inline;">
+</div>
 
-<img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-202131.png?token=GHSAT0AAAAAACJ3XSSFJPLTYXQVA76FHQ2IZKIFQ5Q" width="500" height="600">
+<br/>
+<div style="display: flex;">
+<img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-204611.png?token=GHSAT0AAAAAACJ3XSSEMO3QMY4E4M6XZLYIZKIF4BQ" width="200" height="300"  style="display: inline;">
+..
+<img src="https://raw.githubusercontent.com/jcarloscody/prova_flutter_targetSistemas/master/prova/Screenshot_20231105-204514.png?token=GHSAT0AAAAAACJ3XSSFMLHIDIKQ4E6XQGVYZKIF3TQ" width="200" height="300"  style="display: inline;">
+
+</div>
+
